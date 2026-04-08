@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spin & Win - Popup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="demo">
+    <button class="open-btn" id="openModal">Buka Popup Spin</button>
+  </main>
+
+  <div class="sv-modal" id="svModal" aria-hidden="true">
+    <div class="sv-backdrop" data-close></div>
+
+    <section class="sv-card" role="dialog" aria-modal="true" aria-labelledby="svTitle">
+      <button class="sv-close" id="svClose" aria-label="Close">x</button>
+
+      <div class="sv-left">
+        <img src="assets/zootopia.png" alt="Poster Zootopia" />
+      </div>
+
+      <div class="sv-right">
+        <div class="brand">Cool‑Vita®</div>
+        <h1 id="svTitle" class="title">
+          <span>SPIN &amp; WIN</span><br />DISNEY TICKET
+        </h1>
+        <p class="subtitle">1000 Points Spin Once, 100% Get the Prize</p>
+
+        <div class="wheel-wrap">
+          <img class="wheel" id="wheel" src="assets/wheel.png" alt="wheel" />
+          <img class="arrow center" src="assets/arrow.png" alt="arrow" />
+
+          <button id="spinBtn" class="spin">
+            <img src="assets/spin-btn.png" alt="SPIN" />
+          </button>
+        </div>
+        <div class="result" id="result">Tekan SPIN untuk mulai</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
